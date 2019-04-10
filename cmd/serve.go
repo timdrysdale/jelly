@@ -17,28 +17,33 @@ package cmd
 
 import (
 	"fmt"
+	"log"
+	"net/http"
+	"strconv"
 
+	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // serveCmd represents the serve command
 var serveCmd = &cobra.Command{
 	Use:   "serve",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "REST API",
+	Long:  `set the port in the config file`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("serve called")
+		port, ok := viper.Get("port").(int)
+		if !ok {
+			fmt.Println("Panic! Port in config is not an int:", viper.Get("port"))
+			return
+		}
+		fmt.Printf("Serving at http://localhost:%v\n", port)
+		serve(port)
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(serveCmd)
-
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
@@ -47,5 +52,25 @@ func init() {
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// serveCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	serveCmd.Flags().IntP("port", "p", 8001, "Listening port, default 8000")
+	viper.BindPFlag("port", serveCmd.Flags().Lookup("port"))
+
+}
+
+func YourHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Gorilla!\n"))
+}
+
+func FooHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("FooBar!\n"))
+}
+
+func serve(port int) {
+	r := mux.NewRouter()
+	// Routes consist of a path and a handler function.
+	r.HandleFunc("/", YourHandler)
+	r.HandleFunc("/foo", FooHandler)
+
+	// Bind to a port and pass our router in
+	log.Fatal(http.ListenAndServe(":"+strconv.Itoa(port), r))
 }
