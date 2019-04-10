@@ -1,2 +1,2 @@
-# jelly-bear
+# jelly
 jitsi jwt middleware prototype
