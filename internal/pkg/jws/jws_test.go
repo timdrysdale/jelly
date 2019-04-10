@@ -24,7 +24,7 @@ import (
 func TestJitsiJWT(t *testing.T) {
 	ttl := 100
 	secret := "abc"
-	fmt.Printf("%q\n", jitsi(secret, ttl))
+	fmt.Printf("%q\n", Jitsi(secret, ttl))
 	fmt.Println(time.Now().Add(time.Duration(ttl) * time.Second))
 
 }

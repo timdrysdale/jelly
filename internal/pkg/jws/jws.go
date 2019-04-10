@@ -62,7 +62,7 @@ j := NewJWT(claims, crypto.SigningMethodRS512)
 
 */
 
-func jitsi(secret string, ttl int) []byte {
+func Jitsi(secret string, ttl int) []byte {
 	// Create JWS claims
 	claims := jws.Claims{}
 	claims.SetExpiration(time.Now().Add(time.Duration(ttl) * time.Second))

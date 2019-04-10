@@ -24,6 +24,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/timdrysdale/jelly/internal/pkg/jws"
 )
 
 // serveCmd represents the serve command
@@ -67,8 +68,7 @@ func JitsiHandler(w http.ResponseWriter, r *http.Request) {
 		secret = "bananas"
 	}
 
-	something := "Jitsi" + secret
-	w.Write([]byte(something))
+	w.Write([]byte(jws.Jitsi(secret, 86400)))
 }
 
 func serve(port int) {
