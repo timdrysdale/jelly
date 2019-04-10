@@ -61,15 +61,21 @@ func YourHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Gorilla!\n"))
 }
 
-func FooHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("FooBar!\n"))
+func JitsiHandler(w http.ResponseWriter, r *http.Request) {
+	secret, ok := viper.Get("secret").(string)
+	if !ok {
+		secret = "bananas"
+	}
+
+	something := "Jitsi" + secret
+	w.Write([]byte(something))
 }
 
 func serve(port int) {
 	r := mux.NewRouter()
 	// Routes consist of a path and a handler function.
 	r.HandleFunc("/", YourHandler)
-	r.HandleFunc("/foo", FooHandler)
+	r.HandleFunc("/jitsi", JitsiHandler)
 
 	// Bind to a port and pass our router in
 	log.Fatal(http.ListenAndServe(":"+strconv.Itoa(port), r))
