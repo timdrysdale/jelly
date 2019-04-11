@@ -1,0 +1,37 @@
+<html>
+
+<head>
+	<title>jitsi test</title>
+	<base href="https://openpracticalwork.org/video1/" target="_blank">
+	<script src="https://meet.jit.si/libs/lib-jitsi-meet.min.js"></script>
+</head>
+
+<body>
+
+  <div id="jitsi"></div>
+
+
+<script>
+JitsiMeetJS.init();
+
+options = null
+
+var connection = new JitsiMeetJS.JitsiConnection(null, null, options);
+connection.addEventListener(JitsiMeetJS.events.connection.CONNECTION_ESTABLISHED, onConnectionSuccess);
+connection.addEventListener(JitsiMeetJS.events.connection.CONNECTION_FAILED, onConnectionFailed);
+connection.addEventListener(JitsiMeetJS.events.connection.CONNECTION_DISCONNECTED, disconnect);
+
+connection.connect();
+     
+confOptions = null
+
+room = connection.initJitsiConference("conference1", confOptions);
+room.on(JitsiMeetJS.events.conference.TRACK_ADDED, onRemoteTrack);
+room.on(JitsiMeetJS.events.conference.CONFERENCE_JOINED, onConferenceJoined);
+JitsiMeetJS.createLocalTracks().then(onLocalTracks);
+room.join();
+</script>
+
+</body>
+
+</html>
