@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="350"
+   height="68"
+   viewBox="-1 -1 350 68"
+   id="svg9"
+   sodipodi:docname="jelly.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="995"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="2.4540765"
+     inkscape:cx="190.87912"
+     inkscape:cy="68.903946"
+     inkscape:window-x="0"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <path
+     id="ID0.6853602952323854"
+     d="M 59.3,4.45 C 66.26,4.409 73.319,0.184 80.05,1.95 84.603,3.144 89.291,7.597 89.8,12.2 90.144,17.087 86.262,22.277 82.085,24.571 74.914,28.509 67.43,29.7 58.05,29.7 48.67,29.7 41.138,28.404 34.015,24.571 29.622,22.213 25.576,17.141 26.55,12.45 27.329,7.311 32.852,3.196 38.05,1.95 44.975,0.297 52.091,4.493 59.3,4.45 Z"
+     style="fill:#fb6107;fill-opacity:1;stroke:#fb6107;stroke-width:2;stroke-linecap:round;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     id="path3"
+     d="m 34.25,15.75 c 6.96,-0.041 14.019,-4.266 20.75,-2.5 4.553,1.194 9.241,5.647 9.75,10.25 0.344,4.887 -3.538,10.077 -7.715,12.371 C 49.864,39.809 42.38,41 33,41 23.62,41 16.088,39.704 8.965,35.871 4.572,33.513 0.526,28.441 1.5,23.75 2.279,18.611 7.802,14.496 13,13.25 c 6.925,-1.653 14.041,2.543 21.25,2.5 z"
+     style="fill:#fcf800;fill-opacity:1;stroke:#fcf800;stroke-width:2;stroke-linecap:round;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     id="path5"
+     d="m 63.825536,24.63699 c 6.068639,-3.408063 10.196688,-10.524194 16.940514,-12.240567 4.561403,-1.161486 10.819923,0.462545 13.495393,4.242564 2.668732,4.108404 1.787428,10.52941 -0.755081,14.55997 -4.36508,6.919333 -10.334919,11.587283 -18.540404,16.131996 -8.205484,4.544714 -15.422292,7.06033 -23.510518,7.158451 -4.985408,0.06571 -10.982228,-2.410865 -12.403029,-6.986396 -1.808445,-4.872955 1.029231,-11.14865 4.972663,-14.757121 5.25699,-4.801259 13.51497,-4.578441 19.800462,-8.108897 z"
+     style="fill:#ff0044;fill-opacity:1;stroke:#ff0044;stroke-width:2;stroke-linecap:round;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     id="path7"
+     d="m 41.589774,39.495899 c 6.925578,0.69256 14.390448,-2.765159 20.897909,-0.299786 4.401853,1.667076 8.594573,6.589235 8.61575,11.220243 -0.172828,4.896043 -4.580058,9.648132 -8.975512,11.489258 -7.546007,3.160517 -15.113837,3.556344 -24.441626,2.568032 C 28.358507,63.485333 21.004983,61.402947 14.325491,56.840776 10.205392,54.033038 6.7163179,48.562968 8.1791581,44.000704 9.4952866,38.972387 15.421116,35.462217 20.721466,34.770833 c 7.06062,-0.914154 13.694904,4.008259 20.868308,4.725066 z"
+     style="fill:#caff2e;fill-opacity:1;stroke:#caff2e;stroke-width:2;stroke-linecap:round;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:39.57010651px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="119.20815"
+     y="47.033222"
+     id="text4616"><tspan
+       sodipodi:role="line"
+       id="tspan4614"
+       x="119.20815"
+       y="47.033222"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.33333206px;font-family:comfortaa;-inkscape-font-specification:comfortaa;letter-spacing:25px">jelly</tspan></text>
+</svg>

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+	<title>video test</title>
+	<base href="https://openpracticalwork.org/videosecure/" target="_blank">
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap -->
+
+	<link rel="styleSheet" href="style.css" type="text/css" media="screen">
+	<script src="video.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip({
+				html: true
+			});
+		});
+	</script>
+	<script src="smoothie.js"></script>
+	<script src="automate.js"></script> 
+	<script src="https://beta.meet.jit.si/external_api.js"></script>
+</head>
+
+<body>
+
+	
+
+  <div id="main-container" class="container">
+    
+    <div id="session">
+      
+      <div id="video"></div>
+       
+    <div>
+      <canvas id="smoothie-chart" width="640" height="160">
+    </div>
+          
+      <div>	 
+	<input class="btn btn-large btn-info" type="button" id="buttonStartPendulum" onmouseup="startPendulum();" value="Start">
+      
+	<input class="btn btn-large btn-warning" type="button" id="buttonStopPendulumLoaded" onmouseup="stopPendulumLoaded();" value="Stop (load)">
+      
+	<input class="btn btn-large btn-warning" type="button" id="buttonStopPendulumUnLoaded" onmouseup="stopPendulumUnLoaded();" value="Stop">
+      
+	<input class="btn btn-large btn-error" type="button" id="buttonCalPendulum" onmouseup="calPendulum();" value="Calibrate">
+
+  </div>
+
+</body>
+
+</html>
